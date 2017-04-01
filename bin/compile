@@ -144,6 +144,9 @@ build_dependencies() {
   fi
   run_if_present 'heroku-postbuild'
   # TODO: run_if_present 'build'
+  npm install gulp
+  npm install typings
+  typings install
   npm run build-dist
 }
 
